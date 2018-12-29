@@ -7,3 +7,4 @@ const Input = props => (
         label={props.label}
     />
 )
+export default Input
