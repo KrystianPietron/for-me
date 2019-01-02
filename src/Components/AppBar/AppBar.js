@@ -4,19 +4,22 @@ const style = {
     divStyle: {
         display: 'flex',
         flexDirection: 'row',
-        height: '80px',
-        justifyContent: 'space-between'
+        height: '60px',
+        justifyContent: 'space-between',
+        background: 'red'
     },
     divText: {
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        margin: '0 0 0 20px'
     },
     divButton: {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        margin: '0 20px 0 '
     },
     buttonStyle: {
 
@@ -42,6 +45,9 @@ const AppBar = props => (
             />
             <Button
                 label='technologies'
+            />
+            <Button
+                label='Projects'
             />
         </div>
     </div>
