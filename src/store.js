@@ -5,10 +5,10 @@ import {
     applyMiddleware
 } from 'redux'
 import thunk from 'redux-thunk'
-import news from './State/new'
+import head from './State/head'
 
 const reducer = combineReducers({
-    news
+    head
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

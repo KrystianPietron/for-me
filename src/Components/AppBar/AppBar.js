@@ -1,12 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router'
 import Button from '../../elements/Button'
+import logo from '../../img/logo.png'
 const style = {
     divStyle: {
         display: 'flex',
         flexDirection: 'row',
         height: '60px',
         justifyContent: 'space-between',
-        background: 'red'
+        background: 'red',
+        position: 'fixed',
+        width: '100%'
     },
     divText: {
         display: 'flex',
@@ -22,7 +26,12 @@ const style = {
         margin: '0 20px 0 '
     },
     buttonStyle: {
-
+        height: '100%',
+        width: '10vw'
+    },
+    logo: {
+        height: '55px',
+        width: '55px'
     }
 }
 
@@ -32,22 +41,28 @@ const AppBar = props => (
         <div
             style={style.divText}
         >
-            <h2>Krystian Pietroń jr. Front-End Developer</h2>
+            <img src={logo} alt='logo' style={style.logo} />
         </div>
         <div
             style={style.divButton}
         >
+            <Link to='/'>
+                <Button
+                    style={style.buttonStyle}
+                    label='HOME'
+                />
+            </Link>
             <Button
-                label='HOME'
+                style={style.buttonStyle}
+                label='O mnie'
             />
             <Button
-                label='For ME'
+                style={style.buttonStyle}
+                label='technologie'
             />
             <Button
-                label='technologies'
-            />
-            <Button
-                label='Projects'
+                style={style.buttonStyle}
+                label='Projekty'
             />
         </div>
     </div>
