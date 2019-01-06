@@ -3,12 +3,6 @@ import { connect } from 'react-redux'
 import { changeDisplay } from '../../State/head';
 import './Head.css'
 
-const style = {
-    divStyle: {
-        height: '900px',
-    },
-}
-
 class Head extends React.Component {
 
     componentDidMount() {
@@ -17,11 +11,15 @@ class Head extends React.Component {
 
     render() {
         return (
-            <div
-                style={style.divStyle}
-            >
+            <div className="Head">
                 <div className={this.props.display}>
-                    <h2 style={{ margin: '0 20px 10px 0' }}>{this.props.text}</h2>
+                    <h2 style={{ margin: '0 20px 10px 0' }} className="text">{this.props.text}</h2>
+                </div>
+                <div className={this.props.display2}>
+                    <h2 style={{ margin: '0 20px 10px 0' }} className="text">{this.props.text}</h2>
+                </div>
+                <div className={this.props.display3}>
+                    <h2 style={{ margin: '0 20px 10px 0' }} >{this.props.text}</h2>
                 </div>
             </div>
         )
@@ -29,6 +27,8 @@ class Head extends React.Component {
 }
 const mapStateToProps = state => ({
     display: state.head.display,
+    display2: state.head.display2,
+    display3: state.head.display3,
     text: state.head.text,
 })
 const mapDispatchToProps = dispatch => ({

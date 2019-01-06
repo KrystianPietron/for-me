@@ -1,0 +1,21 @@
+.AppBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    height: 65px;
+    width: 97.2vw;
+    position: fixed;
+    background: gray;
+    z-index: 9999;
+}
+
+.AppBar__Logo {
+    margin: 5px 0 0 20px;
+    height: 55px;
+    width: 55px;
+}
+
+.AppBar__Links{
+    margin: 0 20px 0 0;
+}

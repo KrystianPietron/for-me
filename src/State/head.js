@@ -4,6 +4,8 @@ const DISPLAY3 = 'head/DISPLAY3'
 
 const INITIAL_STATE = {
     display: null,
+    display2: null,
+    display3: null,
     text: null
 }
 
@@ -40,16 +42,22 @@ export default (state = INITIAL_STATE, action) => {
         case DISPLAY1:
             return {
                 display: "Display1",
+                display2: "Unvisible",
+                display3: "Unvisible",
                 text: 'Krystian Pietroń jr. Front-End Developer'
             }
         case DISPLAY2:
             return {
-                display: "Display2",
+                display: "Unvisible",
+                display2: "Display2",
+                display3: "Unvisible",
                 text: 'Technologie'
             }
         case DISPLAY3:
             return {
-                display: "Display3",
+                display: "Unvisible",
+                display2: "Unvisible",
+                display3: "Display3",
                 text: 'Projekty'
             }
         default:

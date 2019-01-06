@@ -1,37 +1,14 @@
 import React from 'react'
 import foto from '../../img/KrystianPietron.JPG'
-
-const style = {
-    divStyle: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        flexWrap: 'wrap'
-
-    },
-    foto: {
-        height: '350px',
-        margin: '10px 0 10px 0'
-    },
-    divText: {
-        margin: '0 0 0 30px',
-        display: 'flex',
-        alignItems: 'flex-start',
-        flexDirection: 'column'
-    },
-}
+import './ForMe.css'
 
 const ForMe = props => (
-    <div id='forme'
-        style={style.divStyle}
-    >
+    <div className="ForMe">
         <div>
-            <img src={foto} alt='foto' style={style.foto} />
+            <img src={foto} alt='foto' className="ForMe__Foto" />
 
         </div>
-        <div
-            style={style.divText}
-        >
+        <div className="ForMe__Text">
             <h3>Cześć!</h3>
             <p>  Mam na imie Krystian.
                 Front-Endem zajmuję się od 3 miesięcy. Poszukuję pracy w Lublinie. <br />

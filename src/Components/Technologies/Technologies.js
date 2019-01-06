@@ -5,39 +5,21 @@ import javascript from '../../img/javascript.png'
 import reactpng from '../../img/react.png'
 import reduxpng from '../../img/redux.png'
 import reactrouter from '../../img/react-router.png'
-
-const style = {
-    divImg: {
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-    },
-    img: {
-        height: '300px',
-        margin: '10px 0px 10px 0px'
-    },
-    imgRe: {
-        height: '250px',
-        width: '300px',
-        margin: '10px 0px 10px 0px'
-    },
-    imgRouter: {
-        height: '200px',
-        width: '300px',
-        margin: '30px 0px 10px 0px'
-    }
-}
+import './Technologies.css'
 
 const Technologies = props => (
-    <div
-        style={style.divImg}
-    >
-        <img src={html5} alt='html5png' style={style.img} />
-        <img src={css3} alt='css3png' style={style.img} />
-        <img src={javascript} alt='javascriptpng' style={style.img} />
-        <img src={reactpng} alt='reactpng' style={style.imgRe} />
-        <img src={reactrouter} alt='reactrouter' style={style.imgRouter} />
-        <img src={reduxpng} alt='reduxpng' style={style.imgRe} />
+    <div >
+        <div className="Technologies">
+            <img src={html5} alt='html5png' className="Technologies__img Technologies__AllImg" />
+            <img src={css3} alt='css3png' className="Technologies__img Technologies__AllImg" />
+            <img src={javascript} alt='javascriptpng' className="Technologies__img Technologies__AllImg" />
+        </div>
+        <div className="Technologies">
+            <img src={reactpng} alt='reactpng' className="Technologies__ReduxReact Technologies__AllImg" />
+            <img src={reactrouter} alt='reactrouter' className="Technologies__Router Technologies__AllImg" />
+            <img src={reduxpng} alt='reduxpng' className="Technologies__ReduxReact Technologies__AllImg" />
+        </div>
+
     </div>
 )
 export default Technologies

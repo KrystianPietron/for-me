@@ -1,0 +1,35 @@
+.Technologies{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Technologies__img{
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+}
+
+.Technologies__ReduxReact{
+    height: 250px;
+    width: 300px;
+    margin: 10px 0px 10px 0px;
+}
+
+.Technologies__Router{
+    height: 200px;
+    width: 300px;
+    margin: 30px 0px 10px 0px;
+}
+
+.Technologies__AllImg:hover{
+    animation: Img infinite 80ms linear;
+}
+
+@keyframes Img {
+    from {
+      transform: rotate(-2deg);
+    }
+    to {
+      transform: rotate(2deg);
+    }
+  }

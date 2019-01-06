@@ -1,3 +1,7 @@
+.Head {
+    height: 900px;
+}
+
 .Display1 {
     background-image: url("../../img/beach.jpeg");  
     background-size: cover;
@@ -8,11 +12,14 @@
     justify-content: flex-end;
     align-items: flex-end;
     color: white;
-    transition: opacity 3s;
+    opacity: 1;
+    transition: opacity 2s;
     text-transform: uppercase;
 }
 
 .Display2 {
+    opacity: 1;
+    transition: opacity 2s;
     background-image: url("../../img/technologies.jpg");
     background-size: cover;
     background-position: center;
@@ -22,8 +29,8 @@
     justify-content: center;
     color: black;
     font-size: 60px;
-    transition: opacity 3s;
     text-transform: uppercase;
+    
 }
 
 .Display3 {
@@ -37,10 +44,15 @@
     align-items: flex-end;
     color: white;
     font-size: 60px;
-    transition: opacity 3s;
     text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 2s;
 }
 
 .Unvisible {
-    display: none
+    opacity: 0;
+}
+
+.text{
+    display: none;
 }
