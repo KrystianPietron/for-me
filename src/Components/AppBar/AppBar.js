@@ -8,7 +8,7 @@ const style = {
         flexDirection: 'row',
         height: '60px',
         justifyContent: 'space-between',
-        background: 'red',
+        background: 'gray',
         position: 'fixed',
         width: '100%'
     },
@@ -46,12 +46,10 @@ const AppBar = props => (
         <div
             style={style.divButton}
         >
-            <Link to='/'>
-                <Button
-                    style={style.buttonStyle}
-                    label='HOME'
-                />
-            </Link>
+            <Button
+                style={style.buttonStyle}
+                label='HOME'
+            />
             <Button
                 style={style.buttonStyle}
                 label='O mnie'

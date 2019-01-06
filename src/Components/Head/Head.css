@@ -1,0 +1,46 @@
+.Display1 {
+    background-image: url("../../img/beach.jpeg");  
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    transition: opacity 3s;
+    text-transform: uppercase;
+}
+
+.Display2 {
+    background-image: url("../../img/technologies.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-size: 60px;
+    transition: opacity 3s;
+    text-transform: uppercase;
+}
+
+.Display3 {
+    background-image: url("../../img/projects.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    font-size: 60px;
+    transition: opacity 3s;
+    text-transform: uppercase;
+}
+
+.Unvisible {
+    display: none
+}

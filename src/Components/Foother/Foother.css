@@ -1,0 +1,26 @@
+.Foother{
+    background-color: rgb(85, 85, 85);
+    height: 20vh;
+}
+
+.Foother_div{
+    display: flex;
+    justify-content: center;
+}
+
+.Foother_div-download-kontakt{
+    margin: 10px 20px 10px 0;
+    color:  rgb(141, 139, 139);
+    text-decoration: none;
+}
+
+.Foother_div-copyright{
+    margin: 10px 20px 30px 20px;
+    color:  rgb(141, 139, 139);
+    font-size: 10px
+}
+
+.textDecoration {
+    text-decoration: none;
+    color:  rgb(141, 139, 139);
+}

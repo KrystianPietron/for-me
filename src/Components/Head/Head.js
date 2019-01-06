@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { changeDisplay } from '../../State/head';
+import './Head.css'
 
 const style = {
     divStyle: {
@@ -19,23 +20,15 @@ class Head extends React.Component {
             <div
                 style={style.divStyle}
             >
-                <div style={this.props.display1}>
+                <div className={this.props.display}>
                     <h2 style={{ margin: '0 20px 10px 0' }}>{this.props.text}</h2>
-                </div>
-                <div style={this.props.display2}>
-                    <h3 style={{ margin: ' 0 0 0 20px' }}>{this.props.text}</h3>
-                </div>
-                <div style={this.props.display3}>
-                    <h3 style={{ margin: '0 20px 10px 0' }}>{this.props.text}</h3>
                 </div>
             </div>
         )
     }
 }
 const mapStateToProps = state => ({
-    display1: state.head.display1,
-    display2: state.head.display2,
-    display3: state.head.display3,
+    display: state.head.display,
     text: state.head.text,
 })
 const mapDispatchToProps = dispatch => ({
