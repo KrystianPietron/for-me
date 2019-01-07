@@ -8,7 +8,7 @@ const Foother = props => (
     <div className="Foother">
         <div className="Foother_div">
             <div className="Foother_div-download-kontakt">
-                <p>Linki</p>
+                <p>Social Media</p>
                 <a href="https://www.linkedin.com/in/krystian-pietron/"><img src={linkedin} className="Foother__div-links"></img></a>
                 <a href="https://www.facebook.com/krystian.pietron"><img src={facebook} className="Foother__div-links"></img></a>
                 <a href="https://github.com/KrystianPietron"><img src={github} className="Foother__div-links"></img></a>

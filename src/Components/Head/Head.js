@@ -12,14 +12,16 @@ class Head extends React.Component {
     render() {
         return (
             <div className="Head">
-                <div className={this.props.display}>
-                    <h2 style={{ margin: '0 20px 10px 0' }} className="text">{this.props.text}</h2>
-                </div>
-                <div className={this.props.display2}>
-                    <h2 style={{ margin: '0 20px 10px 0' }} className="text">{this.props.text}</h2>
-                </div>
-                <div className={this.props.display3}>
-                    <h2 style={{ margin: '0 20px 10px 0' }} >{this.props.text}</h2>
+                <div className="Head__div">
+                    <div className={this.props.display}>
+                        <h2 style={{ margin: '0 20px 10px 0' }} >{this.props.text}</h2>
+                    </div>
+                    <div className={this.props.display2}>
+                        <h2 style={{ margin: '0 20px 10px 0' }}>{this.props.text}</h2>
+                    </div>
+                    <div className={this.props.display3}>
+                        <h2 style={{ margin: '0 20px 10px 0' }} >{this.props.text}</h2>
+                    </div>
                 </div>
             </div>
         )

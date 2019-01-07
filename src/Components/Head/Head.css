@@ -1,43 +1,56 @@
 .Head {
     height: 900px;
+    position: sticky;
+}
+
+.Head__div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .Display1 {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
     background-image: url("../../img/beach.jpeg");  
     background-size: cover;
     background-position: center;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     color: white;
+    text-transform: uppercase;
     opacity: 1;
     transition: opacity 2s;
-    text-transform: uppercase;
 }
 
 .Display2 {
-    opacity: 1;
-    transition: opacity 2s;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
     background-image: url("../../img/technologies.jpg");
     background-size: cover;
     background-position: center;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: black;
     font-size: 60px;
     text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 2s;
     
 }
 
 .Display3 {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
     background-image: url("../../img/projects.jpeg");
     background-size: cover;
     background-position: center;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -50,9 +63,8 @@
 }
 
 .Unvisible {
+    z-index: 0;
     opacity: 0;
-}
-
-.text{
-    display: none;
+    display: block;
+    position: absolute;
 }
