@@ -14,10 +14,10 @@
     font-size: 30px;
     color: gray;
     text-decoration: none;
-    border: solid 2px;
 }
 
 .Links_div-element{
+    border: solid 2px;
     width: 30vw;
     height: 30vh;
     display: flex;
