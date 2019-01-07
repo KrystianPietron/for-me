@@ -4,12 +4,12 @@ import './Projects.css'
 const Projects = props => (
     <div className="Links">
         <div className="Links_div">
-            <div className="Links_div-element"><a className="Links_div-link" href='http://stoper.surge.sh/'>Stoper</a></div>
-            <div className="Links_div-element"><a className="Links_div-link" href='http://timer-v1.surge.sh/'>Timer</a></div>
+            <a className="Links_div-link" href='http://stoper.surge.sh/'><div className="Links_div-element-stoper">Stoper</div></a>
+            <a className="Links_div-link" href='http://timer-v1.surge.sh/'><div className="Links_div-element-timer">Timer</div></a>
         </div>
         <div className="Links_div">
-            <div className="Links_div-element"><p className="Links_div-link">Clicker ( in building )</p></div>
-            <div className="Links_div-element"><p className="Links_div-link">Faktura v1.0 ( in building )</p></div>
+            <p className="Links_div-link"><div className="Links_div-element">Clicker ( in building )</div></p>
+            <p className="Links_div-link"><div className="Links_div-element">Faktura v1.0 ( in building )</div></p>
         </div>
     </div >
 )

@@ -28,3 +28,27 @@
 .Links_div-link:hover{
     color: black;
 }
+
+.Links_div-element-stoper{
+    border: solid 2px;
+    width: 30vw;
+    height: 30vh;
+    background-image: url('../../img/stoper.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Links_div-element-timer{
+    border: solid 2px;
+    width: 30vw;
+    height: 30vh;
+    background-image: url('../../img/timer.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
