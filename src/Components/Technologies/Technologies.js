@@ -8,7 +8,7 @@ import reactrouter from '../../img/react-router.png'
 import './Technologies.css'
 
 const Technologies = props => (
-    <div >
+    <section >
         <div className="Technologies">
             <img src={html5} alt='html5png' className="Technologies__img Technologies__AllImg" />
             <img src={css3} alt='css3png' className="Technologies__img Technologies__AllImg" />
@@ -20,6 +20,6 @@ const Technologies = props => (
             <img src={reduxpng} alt='reduxpng' className="Technologies__ReduxReact Technologies__AllImg" />
         </div>
 
-    </div>
+    </section>
 )
 export default Technologies

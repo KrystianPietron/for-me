@@ -11,7 +11,7 @@ class Head extends React.Component {
 
     render() {
         return (
-            <div className="Head">
+            <section className="Head">
                 <div className="Head__div">
                     <div className={this.props.display}>
                         <h2 style={{ margin: '0 20px 10px 0' }} >{this.props.text}</h2>
@@ -23,7 +23,7 @@ class Head extends React.Component {
                         <h2 style={{ margin: '0 20px 10px 0' }} >{this.props.text}</h2>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

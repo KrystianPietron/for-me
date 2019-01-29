@@ -5,7 +5,7 @@ import Head from './Components/Head'
 import ForMe from './Components/ForMe'
 import Technologies from './Components/Technologies';
 import Projects from './Components/Projects/Projects';
-import Foother from './Components/Foother';
+import Footer from './Components/Footer';
 import './App.css'
 
 const App = props => (
@@ -15,7 +15,7 @@ const App = props => (
     <ForMe />
     <Technologies />
     <Projects />
-    <Foother />
+    <Footer />
   </Paper>
 );
 

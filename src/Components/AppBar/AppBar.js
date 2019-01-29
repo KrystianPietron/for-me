@@ -1,18 +1,18 @@
 import React from 'react'
-import Button from '../../elements/Button'
+// import Button from '../../elements/Button'
 import logo from '../../img/logo.png'
 import './AppBar.css'
-import { Link } from 'react-router'
+// import { Link } from 'react-router'
 
-const style = {
-    buttonStyle: {
-        height: '100%',
-        width: '10vw'
-    },
-}
+// const style = {
+//     buttonStyle: {
+//         height: '100%',
+//         width: '10vw'
+//     },
+// }
 
 const AppBar = props => (
-    <div className="AppBar">
+    <nav className="AppBar">
         <img src={logo} alt='logo' className="AppBar__Logo" />
         {/* <div className="AppBar__Links"    >
             <a href="/Projects">
@@ -34,6 +34,6 @@ const AppBar = props => (
                 label='Projekty'
             />
         </div> */}
-    </div>
+    </nav>
 )
 export default AppBar
